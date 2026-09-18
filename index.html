@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodrigo Gonzales Zuazo — Environmental Economist</title>
+<meta name="description" content="Environmental economist at Conservation Strategy Fund. Research on the economics of tropical deforestation, macro-ecological modeling, and satellite-based causal inference in Bolivia and the Amazon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --ink:#24211F;
+    --guindo:#6F3B44;
+    --muted:#6E6864;
+    --line:#E8E4E0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size:17px;
+    line-height:1.6;
+  }
+  a{color:var(--guindo);text-decoration:none}
+  a:hover{text-decoration:underline}
+  a:focus-visible{outline:2px solid var(--guindo);outline-offset:2px}
+
+  .wrap{
+    max-width:1040px;
+    margin:0 auto;
+    padding:0 24px 80px;
+    display:grid;
+    grid-template-columns:230px 1fr;
+    gap:56px;
+  }
+
+  /* ---------- Sidebar ---------- */
+  .sidebar{
+    padding-top:48px;
+  }
+  .sidebar-inner{position:sticky;top:36px}
+  .sidebar img{
+    width:180px;height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin-bottom:16px;
+  }
+  .sidebar h1{
+    font-size:21px;
+    font-weight:700;
+    line-height:1.25;
+  }
+  .sidebar .role{
+    color:var(--muted);
+    font-size:15.5px;
+    margin-top:3px;
+  }
+  .sidebar ul{
+    list-style:none;
+    margin-top:16px;
+    padding-top:14px;
+    border-top:1px solid var(--line);
+    font-size:15px;
+  }
+  .sidebar li{margin-bottom:7px;color:var(--muted)}
+  .sidebar li a{color:var(--guindo)}
+  .sidebar .ico{
+    display:inline-block;
+    width:20px;
+    color:var(--muted);
+  }
+
+  /* ---------- Main ---------- */
+  main{padding-top:48px;max-width:660px}
+  main > section + section{margin-top:44px}
+  h2{
+    font-size:24px;
+    font-weight:700;
+    padding-bottom:8px;
+    border-bottom:2px solid var(--guindo);
+    margin-bottom:20px;
+  }
+  h3.group{
+    font-size:17px;
+    font-weight:700;
+    margin:22px 0 14px;
+  }
+  p + p{margin-top:12px}
+
+  .paper{margin-bottom:22px}
+  .paper .title{font-weight:700}
+  .paper .coauthors{color:var(--muted)}
+  .paper .venue{color:var(--muted);font-style:italic}
+  .paper details{margin-top:4px}
+  .paper summary{
+    cursor:pointer;
+    color:var(--guindo);
+    font-size:15px;
+    user-select:none;
+  }
+  .paper summary:hover{text-decoration:underline}
+  .paper details p{
+    margin-top:8px;
+    font-size:15.5px;
+    color:#3B3835;
+    border-left:2px solid var(--line);
+    padding-left:14px;
+  }
+  .badge{
+    color:var(--guindo);
+    font-size:14.5px;
+    font-weight:700;
+  }
+
+  ul.plain{list-style:none}
+  ul.plain li{margin-bottom:10px}
+
+  footer{
+    margin-top:64px;
+    padding-top:16px;
+    border-top:1px solid var(--line);
+    color:var(--muted);
+    font-size:14px;
+  }
+
+  @media (max-width:760px){
+    .wrap{grid-template-columns:1fr;gap:8px}
+    .sidebar{padding-top:36px}
+    .sidebar-inner{position:static;text-align:center}
+    .sidebar img{margin:0 auto 14px;width:150px;height:150px}
+    .sidebar ul{text-align:left;max-width:280px;margin:16px auto 0}
+    main{padding-top:24px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <img src="foto.jpg" alt="Portrait of Rodrigo Gonzales Zuazo">
+      <h1>Rodrigo Gonzales Zuazo</h1>
+      <p class="role">Environmental Economist</p>
+      <ul>
+        <li><span class="ico">&#9906;</span>Santa Cruz de la Sierra, Bolivia</li>
+        <li><span class="ico">&#9962;</span>Conservation Strategy Fund</li>
+        <li><span class="ico">&#9993;</span><a href="mailto:rodrigogonzaleszuazo@gmail.com">Email</a></li>
+        <li><span class="ico">&#8599;</span><a href="https://www.linkedin.com/in/rodrigonzaleszuazo/">LinkedIn</a></li>
+        <!-- TODO: reemplazar # con la URL de tu nueva cuenta de GitHub -->
+        <li><span class="ico">&#8599;</span><a href="#">GitHub</a></li>
+        <li><span class="ico">&#9776;</span><a href="cv.pdf">CV (PDF)</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <section id="about">
+      <p>I am an environmental economist at <a href="https://www.conservation-strategy.org/">Conservation Strategy Fund</a> in Santa Cruz, Bolivia. My research seeks to understand the economic drivers of tropical deforestation and how forest loss feeds back into the economy, through econometric and structural modeling combined with satellite land-cover data, with Bolivia and the Amazon as empirical settings.</p>
+      <p>Before CSF, I was Principal Economist for the Real Sector at Bolivia's Ministry of Economy and Public Finance, where I worked on macroeconomic policy design with the Central Bank of Bolivia. I have also worked on biodiversity and financial sustainability with international organizations, including the IDB and UNDP. I hold an MA from Brandeis University, which I attended as a Joint Japan/World Bank Graduate Scholar, one of two Latin Americans selected in a global cohort of more than 120.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <h3 class="group">Working papers</h3>
+
+      <div class="paper">
+        <p><span class="title">Productivity, Deforestation, and the Extensive Trap: A Structural Macro Model for Bolivia</span></p>
+        <p class="venue">Presented at the Conference on Nature and the Macroeconomy, Central Bank of Chile – CETEx (LSE) – SUREAL (U. Zurich), Santiago de Chile, 2026</p>
+        <details>
+          <summary>Abstract</summary>
+          <p>This paper develops D-ESTEEM, a structural macro-ecological model of the Bolivian economy, to study how primary forest loss feeds back into productivity and the external sector. Deforestation expands agricultural land while eroding the ecosystem services that sustain yields, pushing the economy into an extensive trap in which growth relies on further land conversion rather than productivity gains. The key ecological elasticity is micro-founded with a municipal panel from Santa Cruz combining satellite land-cover data and panel econometrics. Policy scenarios trace the macroeconomic and fiscal consequences of alternative land-use paths.</p>
+        </details>
+      </div>
+
+
+      <div class="paper">
+        <p><span class="title">The Relationship Between Deforestation and Productivity in Farmlands in Bolivia</span></p>
+        <p class="venue">Mimeo prepared for Fundación FAUTAPO</p>
+        <details>
+          <summary>Abstract</summary>
+          <p>Using a panel of 56 municipalities in Santa Cruz over 2013–2024, this study estimates the causal effect of deforestation on agricultural productivity. It combines MapBiomas land-cover data with two-way fixed effects and Mundlak decompositions, validated against satellite vegetation indices. The results document significant yield losses associated with forest loss, challenging the assumption that agricultural expansion into forest land is productivity-enhancing.</p>
+        </details>
+      </div>
+
+      <div class="paper">
+        <p><span class="title">Cultural Consensus on Environmental Conservation Programs: Mechanisms Behind a Randomized Controlled Trial in Rural Bolivia</span></p>
+        <p class="venue">Master's thesis, Brandeis University, 2025</p>
+        <details>
+          <summary>Abstract</summary>
+          <p>This thesis studies the mechanisms behind a conservation-payment randomized controlled trial (Watershared) in the Bolivian Andes. Drawing on original household survey data, it applies Cultural Consensus Analysis to measure how communities understand conservation agreements and how that shared understanding relates to program outcomes.</p>
+        </details>
+      </div>
+
+      <h3 class="group">Peer-reviewed publications</h3>
+
+      <div class="paper">
+        <p><span class="title">Trade Exposure and Labor Earnings in Bolivia: Worker Level Evidence</span> <span class="coauthors">(with José M. Molina)</span></p>
+        <p class="venue">Latin American Journal of Economic Development (LAJED), 31, 9–30, 2019</p>
+      </div>
+
+      <div class="paper">
+        <p><span class="title">On Graduation from Fiscal Procyclicality: The Case of Bolivia</span> <span class="coauthors">(with José M. Molina)</span></p>
+        <p class="venue">Latin American Journal of Economic Development (LAJED), 27, 39–56, 2017</p>
+      </div>
+
+      <div class="paper">
+        <p><span class="title">The Extensive Trap: How Deforestation Undermines Productivity and Macroeconomic Stability in Bolivia</span> <span class="coauthors">(with Alfonso Malky and Luis Gonzales)</span> <span class="badge">Forthcoming</span></p>
+        <p class="venue">Land and Ocean Series, CETEx, London School of Economics</p>
+      </div>
+
+      <h3 class="group">Other research</h3>
+
+      <div class="paper">
+        <p><span class="title">Evolution of Economic Activity</span></p>
+        <p class="venue">Chapter 2 in the 2022 Report on the Bolivian Economy, Ministry of Economy and Public Finance, 2022</p>
+      </div>
+
+      <div class="paper">
+        <p><span class="title">Informality and Poverty in Bolivia: The Rise of Commerce and Its Consequences</span> <span class="badge">Best Research Paper Award</span></p>
+        <p class="venue">Bolivian Economists' Meeting, Central Bank of Bolivia, 2020</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Rodrigo Gonzales Zuazo · Santa Cruz de la Sierra, Bolivia
+    </footer>
+  </main>
+
+</div>
+</body>
+</html>
