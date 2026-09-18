@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rodrigo Gonzales Zuazo — Environmental Economist</title>
-<meta name="description" content="Environmental economist at Conservation Strategy Fund. Research on the economics of tropical deforestation, macro-ecological modeling, and satellite-based causal inference in Bolivia and the Amazon.">
+<meta name="description" content="Environmental economist at Conservation Strategy Fund. Research on the economics of tropical deforestation, macro-ecological modeling, and applied econometrics with satellite data in Bolivia and the Amazon.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -23,20 +23,20 @@
     background:var(--bg);
     color:var(--ink);
     font-family:"Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size:17px;
-    line-height:1.6;
+    font-size:17.5px;
+    line-height:1.62;
   }
   a{color:var(--guindo);text-decoration:none}
   a:hover{text-decoration:underline}
   a:focus-visible{outline:2px solid var(--guindo);outline-offset:2px}
 
   .wrap{
-    max-width:1040px;
+    max-width:1180px;
     margin:0 auto;
-    padding:0 24px 80px;
+    padding:0 32px 80px;
     display:grid;
-    grid-template-columns:230px 1fr;
-    gap:56px;
+    grid-template-columns:260px 1fr;
+    gap:72px;
   }
 
   /* ---------- Sidebar ---------- */
@@ -45,7 +45,7 @@
   }
   .sidebar-inner{position:sticky;top:36px}
   .sidebar img{
-    width:180px;height:180px;
+    width:200px;height:200px;
     border-radius:50%;
     object-fit:cover;
     object-position:50% 22%;
@@ -53,7 +53,7 @@
     margin-bottom:16px;
   }
   .sidebar h1{
-    font-size:21px;
+    font-size:22px;
     font-weight:700;
     line-height:1.25;
   }
@@ -78,7 +78,7 @@
   }
 
   /* ---------- Main ---------- */
-  main{padding-top:48px;max-width:660px}
+  main{padding-top:48px;max-width:800px}
   main > section + section{margin-top:44px}
   h2{
     font-size:24px;
@@ -118,6 +118,9 @@
     font-size:14.5px;
     font-weight:700;
   }
+  .badge.award{
+    color:#9A7B2D;
+  }
 
   ul.plain{list-style:none}
   ul.plain li{margin-bottom:10px}
@@ -145,7 +148,7 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
-      <img src="701D3DF1-38A5-40AC-BFBA-EA294ECF9F84.jpg" alt="Portrait of Rodrigo Gonzales Zuazo">
+      <img src="foto.jpg" alt="Portrait of Rodrigo Gonzales Zuazo">
       <h1>Rodrigo Gonzales Zuazo</h1>
       <p class="role">Environmental Economist</p>
       <ul>
@@ -161,8 +164,8 @@
 
   <main>
     <section id="about">
-      <p>I am an environmental economist at <a href="https://www.conservation-strategy.org/">Conservation Strategy Fund</a> in Santa Cruz, Bolivia. My research seeks to understand the economic drivers of tropical deforestation and how forest loss feeds back into the economy, through econometric and structural modeling combined with satellite land-cover data, with Bolivia and the Amazon as empirical settings.</p>
-      <p>Before CSF, I was Principal Economist for the Real Sector at Bolivia's Ministry of Economy and Public Finance, where I worked on macroeconomic policy design with the Central Bank of Bolivia. I have also worked on biodiversity and financial sustainability with international organizations, including the IDB and UNDP. I hold an MA from Brandeis University, which I attended as a Joint Japan/World Bank Graduate Scholar, one of two Latin Americans selected in a global cohort of more than 120.</p>
+      <p>I am an environmental economist at <a href="https://www.conservation-strategy.org/">Conservation Strategy Fund</a>. My current research seeks to understand the economic drivers of tropical deforestation and its feedbacks into the economy, combining econometric methods with remotely sensed data. Bolivia and its unique ecosystems are my primary empirical setting.</p>
+      <p>Before CSF, I was Principal Economist for the Real Sector at Bolivia's Ministry of Economy and Public Finance. I have also worked with international organizations, including UNDP and the IDB, on biodiversity data and sustainable finance. I hold an MA from Brandeis University and am a Joint Japan/World Bank Graduate Scholar, one of two Latin Americans selected in a global cohort of more than 120.</p>
     </section>
 
     <section id="research">
@@ -185,7 +188,7 @@
         <p class="venue">Mimeo prepared for Fundación FAUTAPO</p>
         <details>
           <summary>Abstract</summary>
-          <p>Using a panel of 56 municipalities in Santa Cruz over 2013–2024, this study estimates the causal effect of deforestation on agricultural productivity. It combines MapBiomas land-cover data with two-way fixed effects and Mundlak decompositions, validated against satellite vegetation indices. The results document significant yield losses associated with forest loss, challenging the assumption that agricultural expansion into forest land is productivity-enhancing.</p>
+          <p>Using a panel of 56 municipalities in Santa Cruz over 2013–2024, this study examines how deforestation relates to agricultural productivity, combining MapBiomas land-cover data with two-way fixed effects and Mundlak decompositions, validated against satellite vegetation indices. The results document significant yield losses associated with forest loss, challenging the assumption that agricultural expansion into forest land is productivity-enhancing.</p>
         </details>
       </div>
 
@@ -194,19 +197,19 @@
         <p class="venue">Master's thesis, Brandeis University, 2025</p>
         <details>
           <summary>Abstract</summary>
-          <p>This thesis studies the mechanisms behind a conservation-payment randomized controlled trial (Watershared) in the Bolivian Andes. Drawing on original household survey data, it applies Cultural Consensus Analysis to measure how communities understand conservation agreements and how that shared understanding relates to program outcomes.</p>
+          <p>This thesis studies the mechanisms behind a conservation-payment randomized controlled trial (<em>Acuerdos Recíprocos por Agua</em>) in the Bolivian subtropical Andes. Drawing on original household survey data, it applies Cultural Consensus Analysis to measure how communities understand conservation agreements and how that shared understanding relates to program outcomes.</p>
         </details>
       </div>
 
       <h3 class="group">Peer-reviewed publications</h3>
 
       <div class="paper">
-        <p><span class="title">Trade Exposure and Labor Earnings in Bolivia: Worker Level Evidence</span> <span class="coauthors">(with José M. Molina)</span></p>
+        <p><a class="title" href="https://www.scielo.org.bo/scielo.php?pid=S2074-47062019000100002&script=sci_arttext&tlng=es" target="_blank" rel="noopener">Trade Exposure and Labor Earnings in Bolivia: Worker Level Evidence</a> <span class="coauthors">(with José M. Molina)</span></p>
         <p class="venue">Latin American Journal of Economic Development (LAJED), 31, 9–30, 2019</p>
       </div>
 
       <div class="paper">
-        <p><span class="title">On Graduation from Fiscal Procyclicality: The Case of Bolivia</span> <span class="coauthors">(with José M. Molina)</span></p>
+        <p><a class="title" href="https://ideas.repec.org/a/ris/revlde/1944.html" target="_blank" rel="noopener">On Graduation from Fiscal Procyclicality: The Case of Bolivia</a> <span class="coauthors">(with José M. Molina)</span></p>
         <p class="venue">Latin American Journal of Economic Development (LAJED), 27, 39–56, 2017</p>
       </div>
 
@@ -218,12 +221,12 @@
       <h3 class="group">Other research</h3>
 
       <div class="paper">
-        <p><span class="title">Evolution of Economic Activity</span></p>
+        <p><a class="title" href="https://www.economiayfinanzas.gob.bo/index.php/node/16958" target="_blank" rel="noopener">Evolution of Economic Activity</a></p>
         <p class="venue">Chapter 2 in the 2022 Report on the Bolivian Economy, Ministry of Economy and Public Finance, 2022</p>
       </div>
 
       <div class="paper">
-        <p><span class="title">Informality and Poverty in Bolivia: The Rise of Commerce and Its Consequences</span> <span class="badge">Best Research Paper Award</span></p>
+        <p><a class="title" href="https://www.researchgate.net/publication/343318509_Informality_and_Poverty_in_Bolivia_The_Trade_Boom_and_Its_Aftermath" target="_blank" rel="noopener">Informality and Poverty in Bolivia: The Trade Boom and Its Aftermath</a> <span class="badge award">Best Research Paper Award</span></p>
         <p class="venue">Bolivian Economists' Meeting, Central Bank of Bolivia, 2020</p>
       </div>
     </section>
