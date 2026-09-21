@@ -130,12 +130,14 @@
 
   /* ---------- CV section ---------- */
   ul.cvlist{list-style:none;margin-bottom:6px}
-  ul.cvlist li{margin-bottom:7px}
-  .cvlist .yr{
-    font-weight:700;
-    display:inline-block;
-    min-width:92px;
+  ul.cvlist li{
+    display:grid;
+    grid-template-columns:92px 1fr;
+    gap:10px;
+    margin-bottom:7px;
   }
+  .cvlist .yr{font-weight:700}
+  ul.cvlist li.sub{margin-top:-3px;font-size:16px;color:#4A4643}
   .cv-download{
     margin-bottom:18px;
   }
@@ -156,7 +158,7 @@
     .sidebar img{margin:0 auto 14px;width:150px;height:150px}
     .sidebar ul{text-align:left;max-width:300px;margin:16px auto 0}
     main{padding-top:24px}
-    .cvlist .yr{min-width:84px}
+    ul.cvlist li{grid-template-columns:80px 1fr;gap:8px}
   }
 </style>
 </head>
@@ -209,8 +211,9 @@
 
     <section id="current-research">
       <h2>Current Research</h2>
-      <p>I am currently developing causal research designs that combine remotely sensed data with econometric methods to measure the economic and ecological impacts of deforestation in Bolivia's globally significant ecosystems.</p>
-      <p>Bolivia holds a rare biogeographic mosaic. Within a single country, the southwestern rim of the Amazon basin meets the Chiquitano dry forest, the largest intact tropical dry forest on Earth, and transitions into the Gran Chaco and the Bolivian Pantanal, producing sharp ecological gradients over short distances. This is also one of the world's fastest-moving agricultural frontiers. Bolivia now loses more primary forest than any country except Brazil, as soy and cattle expansion collide with some of the least-studied forests on the planet. That combination of ecological uniqueness, rapid land-use change, and scarce rigorous evidence makes Bolivia an exceptional natural laboratory for understanding what deforestation does to ecosystems and to the economies that depend on them.</p>
+      <p>I draw on causal research designs that combine remotely sensed data with econometric methods to understand the economic drivers of tropical deforestation in Bolivia and its socio-ecological implications.</p>
+      <p>Bolivia now loses more primary forest than any country on Earth except Brazil, driven by one of the world's fastest-moving frontiers of soy and cattle expansion. How much of it is propelled by the structure of agricultural incentives, and how much by weak enforcement? How does deforestation pressure spill over from Brazil? How does the frontier interact with Bolivia's communal land regimes and the livelihoods of native communities? These are some of the questions driving my research.</p>
+      <p>This expansion unfolds across a rare biogeographic mosaic, producing sharp ecological gradients over short distances and some of the least-studied forests on the planet, such as the Chiquitano, the largest intact tropical dry forest in the world.</p>
     </section>
 
     <section id="publications">
@@ -281,7 +284,8 @@
 
       <h3 class="group">Education</h3>
       <ul class="cvlist">
-        <li><span class="yr">2023–2025</span>MA in Sustainable International Development, Brandeis University (Joint Japan/World Bank Graduate Scholar)</li>
+        <li><span class="yr">2023–2025</span><span>MA in Sustainable International Development, Brandeis University</span></li>
+        <li class="sub"><span class="yr"></span><span>– Fully funded by the Japan-World Bank Scholarship</span></li>
         <li><span class="yr">2017</span>BA in Economics, Universidad Mayor de San Andrés, with distinction</li>
       </ul>
 
