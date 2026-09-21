@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rodrigo Gonzales Zuazo — Environmental Economist</title>
-<meta name="description" content="Environmental economist at Conservation Strategy Fund. Research on the economics of tropical deforestation, macro-ecological modeling, and applied econometrics with satellite data in Bolivia and the Amazon.">
+<meta name="description" content="Environmental economist at Conservation Strategy Fund. Research on the economics of tropical deforestation, macro-ecological modeling, and applied econometrics with satellite data in Bolivia's unique ecosystems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -69,11 +69,17 @@
     border-top:1px solid var(--line);
     font-size:15px;
   }
-  .sidebar li{margin-bottom:7px;color:var(--muted)}
+  .sidebar li{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    margin-bottom:8px;
+    color:var(--muted);
+  }
   .sidebar li a{color:var(--guindo)}
-  .sidebar .ico{
-    display:inline-block;
-    width:20px;
+  .sidebar .icon{
+    width:17px;height:17px;
+    flex:0 0 17px;
     color:var(--muted);
   }
 
@@ -122,8 +128,18 @@
     color:#9A7B2D;
   }
 
-  ul.plain{list-style:none}
-  ul.plain li{margin-bottom:10px}
+  /* ---------- CV section ---------- */
+  ul.cvlist{list-style:none;margin-bottom:6px}
+  ul.cvlist li{margin-bottom:7px}
+  .cvlist .yr{
+    font-weight:700;
+    display:inline-block;
+    min-width:92px;
+  }
+  .cv-download{
+    margin-bottom:18px;
+  }
+  .cv-download a{font-weight:700}
 
   footer{
     margin-top:64px;
@@ -134,12 +150,13 @@
   }
 
   @media (max-width:760px){
-    .wrap{grid-template-columns:1fr;gap:8px}
+    .wrap{grid-template-columns:1fr;gap:8px;padding:0 24px 80px}
     .sidebar{padding-top:36px}
     .sidebar-inner{position:static;text-align:center}
     .sidebar img{margin:0 auto 14px;width:150px;height:150px}
-    .sidebar ul{text-align:left;max-width:280px;margin:16px auto 0}
+    .sidebar ul{text-align:left;max-width:300px;margin:16px auto 0}
     main{padding-top:24px}
+    .cvlist .yr{min-width:84px}
   }
 </style>
 </head>
@@ -152,24 +169,52 @@
       <h1>Rodrigo Gonzales Zuazo</h1>
       <p class="role">Environmental Economist</p>
       <ul>
-        <li><span class="ico">&#9906;</span>Santa Cruz de la Sierra, Bolivia</li>
-        <li><span class="ico">&#9962;</span>Conservation Strategy Fund</li>
-        <li><span class="ico">&#9993;</span><a href="mailto:rodrigogonzaleszuazo@gmail.com">Email</a></li>
-        <li><span class="ico">&#8599;</span><a href="https://www.linkedin.com/in/rodrigonzaleszuazo/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><span class="ico">&#8599;</span><a href="https://github.com/RodriGonzalesZuazo" target="_blank" rel="noopener">GitHub</a></li>
-        <li><span class="ico">&#9776;</span><a href="CV_Rodrigo_Gonzales_Zuazo_Sept26.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          <span>Santa Cruz de la Sierra, Bolivia</span>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.4" r="1.9" fill="currentColor" stroke="none"/><path d="M12 6.4c-1 2.2-1 4.2 0 6.2 1 2 1 3.6-.2 5.1-1 1.3-2.4 1.7-3.6 1.1"/><path d="M11.1 8.8 8.5 7.4"/><path d="M12.9 8.8l2.6-1.4"/><path d="M11.3 13.6 8.7 14.8"/><path d="M12.7 13.6l2.6 1.2"/></svg>
+          <a href="https://www.conservation-strategy.org/" target="_blank" rel="noopener">Conservation Strategy Fund</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+          <a href="mailto:rodrigogonzaleszuazo@gmail.com">Email</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+          <a href="https://www.linkedin.com/in/rodrigonzaleszuazo/" target="_blank" rel="noopener">LinkedIn</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <a href="https://github.com/RodriGonzalesZuazo" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h9l4 4v16H6z"/><path d="M14.5 2.5V7H19"/><path d="M9 12h7M9 15.5h7"/></svg>
+          <a href="CV_Rodrigo_Gonzales_Zuazo_Sept26.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        </li>
       </ul>
     </div>
   </aside>
 
   <main>
     <section id="about">
-      <p>I am an environmental economist at <a href="https://www.conservation-strategy.org/" target="_blank" rel="noopener">Conservation Strategy Fund</a>. My current research seeks to understand the economic drivers of tropical deforestation and its feedbacks into the economy, combining econometric methods with remotely sensed data. Bolivia and its unique ecosystems are my primary empirical setting.</p>
-      <p>Before CSF, I was Principal Economist for the Real Sector at Bolivia's Ministry of Economy and Public Finance. I have also worked with international organizations, including UNDP and the IDB, on biodiversity data and sustainable finance. I hold an MA from Brandeis University and am a Joint Japan/World Bank Graduate Scholar, one of two Latin Americans selected in a global cohort of more than 120.</p>
+      <h2>About Me</h2>
+      <p>I am an environmental economist at <a href="https://www.conservation-strategy.org/" target="_blank" rel="noopener">Conservation Strategy Fund</a>, a leading organization in conservation economics. My research seeks to understand the economic drivers of tropical deforestation and its feedbacks into the economy, combining econometric methods with remotely sensed data. Bolivia and its unique ecosystems are my primary empirical setting.</p>
+      <p>At CSF I lead studies on the economics of land use and non-market valuation, and support climate and conservation finance initiatives with national and international partners.</p>
+      <p>I have also done research for Purdue University, running household fieldwork for a post-RCT conservation study in Bolivia's rural lowlands that grew into my master's thesis. Earlier, I was a researcher on trade and labor markets in developing countries within a Swiss National Science Foundation project, working heavily with microdata econometrics, which led to the Central Bank of Bolivia's Best Research Paper Award.</p>
+      <p>My policy work includes serving as Principal Economist for the Real Sector at Bolivia's Ministry of Economy and Public Finance, working on macroeconomic policy. Separately, I have consulted for international organizations, including UNDP and the IDB, on biodiversity data and sustainable finance.</p>
+      <p>I lived in Boston for two years. Aside from discovering Dunkin' and lobster rolls, I earned an MA in Sustainable International Development at Brandeis University, fully funded by the Government of Japan and the World Bank as one of two Latin Americans selected in a global cohort of more than 120 scholars.</p>
     </section>
 
-    <section id="research">
-      <h2>Research</h2>
+    <section id="current-research">
+      <h2>Current Research</h2>
+      <p>I am currently developing causal research designs that combine remotely sensed data with econometric methods to measure the economic and ecological impacts of deforestation in Bolivia's globally significant ecosystems.</p>
+      <p>Bolivia holds a rare biogeographic mosaic. Within a single country, the southwestern rim of the Amazon basin meets the Chiquitano dry forest, the largest intact tropical dry forest on Earth, and transitions into the Gran Chaco and the Bolivian Pantanal, producing sharp ecological gradients over short distances. This is also one of the world's fastest-moving agricultural frontiers. Bolivia now loses more primary forest than any country except Brazil, as soy and cattle expansion collide with some of the least-studied forests on the planet. That combination of ecological uniqueness, rapid land-use change, and scarce rigorous evidence makes Bolivia an exceptional natural laboratory for understanding what deforestation does to ecosystems and to the economies that depend on them.</p>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
 
       <h3 class="group">Working papers</h3>
 
@@ -178,10 +223,9 @@
         <p class="venue">Presented at the Conference on Nature and the Macroeconomy, Central Bank of Chile – CETEx (LSE) – SUREAL (U. Zurich), Santiago de Chile, 2026</p>
         <details>
           <summary>Abstract</summary>
-          <p>This paper develops D-ESTEEM, a structural macro-ecological model of the Bolivian economy, to study how primary forest loss feeds back into productivity and the external sector. Deforestation expands agricultural land while eroding the ecosystem services that sustain yields, pushing the economy into an extensive trap in which growth relies on further land conversion rather than productivity gains. The key ecological elasticity is micro-founded with a municipal panel from Santa Cruz combining satellite land-cover data and panel econometrics. Policy scenarios trace the macroeconomic and fiscal consequences of alternative land-use paths.</p>
+          <p>This paper develops a structural macro-ecological model (D-ESTEEM) for the Bolivian economy to study how primary forest loss feeds back into productivity and the external sector. Deforestation expands agricultural land while eroding the ecosystem services that sustain yields, pushing the economy into an extensive trap in which growth relies on further land conversion rather than productivity gains. The key ecological elasticity is micro-founded with a municipal panel from Santa Cruz combining satellite land-cover data and panel econometrics. Policy scenarios trace the macroeconomic and fiscal consequences of alternative land-use paths.</p>
         </details>
       </div>
-
 
       <div class="paper">
         <p><span class="title">The Relationship Between Deforestation and Productivity in Farmlands in Bolivia</span></p>
@@ -204,6 +248,11 @@
       <h3 class="group">Peer-reviewed publications</h3>
 
       <div class="paper">
+        <p><span class="title">The Extensive Trap: How Deforestation Undermines Productivity and Macroeconomic Stability in Bolivia</span> <span class="coauthors">(with Alfonso Malky and Luis Gonzales)</span> <span class="badge">Forthcoming</span></p>
+        <p class="venue">Land and Ocean Series, CETEx, London School of Economics</p>
+      </div>
+
+      <div class="paper">
         <p><a class="title" href="https://www.scielo.org.bo/scielo.php?pid=S2074-47062019000100002&script=sci_arttext&tlng=es" target="_blank" rel="noopener">Trade Exposure and Labor Earnings in Bolivia: Worker Level Evidence</a> <span class="coauthors">(with José M. Molina)</span></p>
         <p class="venue">Latin American Journal of Economic Development (LAJED), 31, 9–30, 2019</p>
       </div>
@@ -211,11 +260,6 @@
       <div class="paper">
         <p><a class="title" href="https://ideas.repec.org/a/ris/revlde/1944.html" target="_blank" rel="noopener">On Graduation from Fiscal Procyclicality: The Case of Bolivia</a> <span class="coauthors">(with José M. Molina)</span></p>
         <p class="venue">Latin American Journal of Economic Development (LAJED), 27, 39–56, 2017</p>
-      </div>
-
-      <div class="paper">
-        <p><span class="title">The Extensive Trap: How Deforestation Undermines Productivity and Macroeconomic Stability in Bolivia</span> <span class="coauthors">(with Alfonso Malky and Luis Gonzales)</span> <span class="badge">Forthcoming</span></p>
-        <p class="venue">Land and Ocean Series, CETEx, London School of Economics</p>
       </div>
 
       <h3 class="group">Other research</h3>
@@ -229,6 +273,37 @@
         <p><a class="title" href="https://www.researchgate.net/publication/343318509_Informality_and_Poverty_in_Bolivia_The_Trade_Boom_and_Its_Aftermath" target="_blank" rel="noopener">Informality and Poverty in Bolivia: The Trade Boom and Its Aftermath</a> <span class="badge award">Best Research Paper Award</span></p>
         <p class="venue">Bolivian Economists' Meeting, Central Bank of Bolivia, 2020</p>
       </div>
+    </section>
+
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <p class="cv-download">Download my full <a href="CV_Rodrigo_Gonzales_Zuazo_Sept26.pdf" target="_blank" rel="noopener">CV (PDF)</a>.</p>
+
+      <h3 class="group">Education</h3>
+      <ul class="cvlist">
+        <li><span class="yr">2023–2025</span>MA in Sustainable International Development, Brandeis University (Joint Japan/World Bank Graduate Scholar)</li>
+        <li><span class="yr">2017</span>BA in Economics, Universidad Mayor de San Andrés, with distinction</li>
+      </ul>
+
+      <h3 class="group">Experience</h3>
+      <ul class="cvlist">
+        <li><span class="yr">2025–</span>Environmental Economist, Conservation Strategy Fund, Santa Cruz, Bolivia</li>
+        <li><span class="yr">2024</span>Conservation Research Assistant, Purdue University (field research in rural Bolivia)</li>
+        <li><span class="yr">2021–2023</span>Principal Economist, Real Sector, Ministry of Economy and Public Finance, Bolivia</li>
+        <li><span class="yr">2017–2019</span>Researcher, Trade and Labor Markets, CIESS Econométrica, La Paz, Bolivia</li>
+      </ul>
+
+      <h3 class="group">Selected consulting</h3>
+      <ul class="cvlist">
+        <li><span class="yr">2026</span>Inter-American Development Bank (IDB), sustainable and productive finance for MSMEs in Bolivia</li>
+        <li><span class="yr">2025</span>United Nations Development Programme (UNDP), biodiversity indicators aligned with the CBD Global Biodiversity Framework</li>
+      </ul>
+
+      <h3 class="group">Honors and awards</h3>
+      <ul class="cvlist">
+        <li><span class="yr">2023</span>Joint Japan/World Bank Graduate Scholarship, one of two Latin American recipients in a global cohort of more than 120</li>
+        <li><span class="yr">2020</span>Best Research Paper Award, Central Bank of Bolivia</li>
+      </ul>
     </section>
 
     <footer>
